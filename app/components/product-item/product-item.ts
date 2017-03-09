@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { StarsComponent } from '../stars/stars';
+import { Product } from '../../services/product-service';
 
 @Component({
   moduleId: module.id,
@@ -7,6 +9,7 @@ import { Component } from '@angular/core';
 })
 
 export class ProductItemComponent {
+  @Input() product: Product;
 
   constructor() {
 

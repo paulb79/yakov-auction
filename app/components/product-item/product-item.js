@@ -10,11 +10,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var product_service_1 = require("../../services/product-service");
 var ProductItemComponent = (function () {
     function ProductItemComponent() {
     }
     return ProductItemComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", product_service_1.Product)
+], ProductItemComponent.prototype, "product", void 0);
 ProductItemComponent = __decorate([
     core_1.Component({
         moduleId: module.id,

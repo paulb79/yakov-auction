@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar';
 import { ProductItemComponent } from './components/product-item/product-item';
 import { SearchComponent } from './components/search/search';
 import { StarsComponent } from './components/stars/stars';
+import { ProductService } from './services/product-service';
 
 
 @NgModule({
@@ -21,6 +22,9 @@ import { StarsComponent } from './components/stars/stars';
     ProductItemComponent,
     SearchComponent,
     StarsComponent
+  ],
+  providers: [
+    ProductService
   ],
   bootstrap: [
     AppComponent

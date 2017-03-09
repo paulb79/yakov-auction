@@ -10,9 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var product_service_1 = require("../../services/product-service");
 var AppComponent = (function () {
-    function AppComponent() {
-        this.name = "Willow";
+    function AppComponent(productService) {
+        this.productService = productService;
+        this.products = [];
+        this.products = this.productService.getProducts();
     }
     return AppComponent;
 }());
@@ -20,9 +23,11 @@ AppComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'app',
-        templateUrl: 'application.html'
+        templateUrl: 'application.html',
+        styleUrls: ['application.css'],
+        encapsulation: core_1.ViewEncapsulation.None
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [product_service_1.ProductService])
 ], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=application.js.map

@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { Product, ProductService } from '../../services/product-service';
 
 @Component({
   moduleId: module.id,
   selector: 'app',
-  templateUrl: 'application.html'
+  templateUrl: 'application.html',
+  styleUrls: [ 'application.css' ],
+  encapsulation: ViewEncapsulation.None
 })
 
 export class AppComponent {
-  name: string;
+  products: Array<Product> = [];
 
-  constructor() {
-    this.name = "Willow";
+  constructor(
+    private productService: ProductService
+  ) {
+    this.products = this.productService.getProducts();
   }
 }

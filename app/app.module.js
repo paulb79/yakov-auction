@@ -15,6 +15,7 @@ var navbar_1 = require("./components/navbar/navbar");
 var product_item_1 = require("./components/product-item/product-item");
 var search_1 = require("./components/search/search");
 var stars_1 = require("./components/stars/stars");
+var product_service_1 = require("./services/product-service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -33,6 +34,9 @@ AppModule = __decorate([
             product_item_1.ProductItemComponent,
             search_1.SearchComponent,
             stars_1.StarsComponent
+        ],
+        providers: [
+            product_service_1.ProductService
         ],
         bootstrap: [
             application_1.AppComponent
