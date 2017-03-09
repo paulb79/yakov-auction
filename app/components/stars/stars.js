@@ -12,16 +12,32 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var StarsComponent = (function () {
     function StarsComponent() {
+        this.count = 5;
+        this.rating = 0;
+        this.stars = [];
     }
+    StarsComponent.prototype.ngOnInit = function () {
+        for (var i = 1; i <= this.count; i++) {
+            this.stars.push(i > this.rating);
+        }
+    };
     return StarsComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], StarsComponent.prototype, "count", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Number)
+], StarsComponent.prototype, "rating", void 0);
 StarsComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
         selector: 'stars',
+        styles: [".starrating { color: #d17581; }"],
         templateUrl: 'stars.html'
-    }),
-    __metadata("design:paramtypes", [])
+    })
 ], StarsComponent);
 exports.StarsComponent = StarsComponent;
 //# sourceMappingURL=stars.js.map
