@@ -8,7 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
+var application_1 = require("./components/application/application");
+var carousel_1 = require("./components/carousel/carousel");
+var footer_1 = require("./components/footer/footer");
+var navbar_1 = require("./components/navbar/navbar");
+var product_item_1 = require("./components/product-item/product-item");
+var search_1 = require("./components/search/search");
+var stars_1 = require("./components/stars/stars");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -20,10 +26,16 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule
         ],
         declarations: [
-            app_component_1.AppComponent
+            application_1.AppComponent,
+            carousel_1.CarouselComponent,
+            footer_1.FooterComponent,
+            navbar_1.NavbarComponent,
+            product_item_1.ProductItemComponent,
+            search_1.SearchComponent,
+            stars_1.StarsComponent
         ],
         bootstrap: [
-            app_component_1.AppComponent
+            application_1.AppComponent
         ]
     })
 ], AppModule);

@@ -10,20 +10,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.name = "Willow";
+var CarouselComponent = (function () {
+    function CarouselComponent() {
     }
-    return AppComponent;
+    return CarouselComponent;
 }());
-AppComponent = __decorate([
+CarouselComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'app',
-        templateUrl: 'app.component.html',
-        styleUrls: ['app.component.css']
+        selector: 'carousel',
+        templateUrl: 'carousel.html'
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], CarouselComponent);
+exports.CarouselComponent = CarouselComponent;
+//# sourceMappingURL=carousel.js.map
