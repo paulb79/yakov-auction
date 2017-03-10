@@ -9,13 +9,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var application_1 = require("./components/application/application");
+var home_1 = require("./components/home/home");
 var carousel_1 = require("./components/carousel/carousel");
 var footer_1 = require("./components/footer/footer");
 var navbar_1 = require("./components/navbar/navbar");
 var product_item_1 = require("./components/product-item/product-item");
+var product_detail_1 = require("./components/product-detail/product-detail");
 var search_1 = require("./components/search/search");
 var stars_1 = require("./components/stars/stars");
 var product_service_1 = require("./services/product-service");
+var app_router_1 = require("./app.router");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -24,14 +27,17 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [
-            platform_browser_1.BrowserModule
+            platform_browser_1.BrowserModule,
+            app_router_1.AppRoutingModule
         ],
         declarations: [
             application_1.AppComponent,
+            home_1.HomeComponent,
             carousel_1.CarouselComponent,
             footer_1.FooterComponent,
             navbar_1.NavbarComponent,
             product_item_1.ProductItemComponent,
+            product_detail_1.ProductDetailComponent,
             search_1.SearchComponent,
             stars_1.StarsComponent
         ],
