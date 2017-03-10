@@ -10,8 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var product_service_1 = require("../../services/product-service");
 var HomeComponent = (function () {
-    function HomeComponent() {
+    function HomeComponent(productService) {
+        this.productService = productService;
+        this.products = [];
+        this.products = this.productService.getProducts();
     }
     return HomeComponent;
 }());
@@ -21,7 +25,7 @@ HomeComponent = __decorate([
         selector: 'home',
         templateUrl: 'home.html'
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [product_service_1.ProductService])
 ], HomeComponent);
 exports.HomeComponent = HomeComponent;
 //# sourceMappingURL=home.js.map

@@ -7,18 +7,7 @@
       <search></search>
     </div>
 
-    <div class="col-md-9">
-      <div class="row carousel-holder">
-        <div class="col-md-12">
-          <carousel></carousel>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4 col-lg-4 col-md-4" *ngFor="let prod of products">
-          <product-item [product]="prod"></product-item>
-        </div>
-      </div>
-    </div>
+    <router-outlet></router-outlet>
   </div>
 </div>
 

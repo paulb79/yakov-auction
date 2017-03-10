@@ -11,10 +11,8 @@ var router_1 = require("@angular/router");
 var home_1 = require("./components/home/home");
 var product_detail_1 = require("./components/product-detail/product-detail");
 var routes = [
-    { path: '',
-        component: home_1.HomeComponent },
-    { path: 'product',
-        component: product_detail_1.ProductDetailComponent }
+    { path: '', component: home_1.HomeComponent },
+    { path: 'product', component: product_detail_1.ProductDetailComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
