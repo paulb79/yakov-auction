@@ -1,0 +1,1 @@
+{"version":3,"file":"seller-info.js","sourceRoot":"","sources":["seller-info.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA0C;AAQ1C,IAAa,mBAAmB;IAAhC;IAEA,CAAC;IAAD,0BAAC;AAAD,CAAC,AAFD,IAEC;AAFY,mBAAmB;IAN/B,gBAAS,CAAC;QACT,QAAQ,EAAE,MAAM,CAAC,EAAE;QACnB,QAAQ,EAAE,aAAa;QACvB,WAAW,EAAE,kBAAkB;KAChC,CAAC;GAEW,mBAAmB,CAE/B;AAFY,kDAAmB"}

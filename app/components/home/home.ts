@@ -10,9 +10,7 @@ import { Product, ProductService } from '../../services/product-service';
 export class HomeComponent {
   products: Array<Product> = [];
 
-  constructor(
-    private productService: ProductService
-  ) {
+  constructor(private productService: ProductService) {
     this.products = this.productService.getProducts();
   }
 }

@@ -10,9 +10,15 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var home_1 = require("./components/home/home");
 var product_detail_1 = require("./components/product-detail/product-detail");
+var product_description_1 = require("./components/product-description/product-description");
+var seller_info_1 = require("./components/seller-info/seller-info");
 var routes = [
     { path: '', component: home_1.HomeComponent },
-    { path: 'product', component: product_detail_1.ProductDetailComponent }
+    { path: 'product/:id', component: product_detail_1.ProductDetailComponent,
+        children: [
+            { path: '', component: product_description_1.ProductDescriptionComponent },
+            { path: 'seller/:id', component: seller_info_1.SellerInfoComponent }
+        ] }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

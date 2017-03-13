@@ -14,4 +14,10 @@ export class ProductItemComponent {
   constructor() {
 
   }
+
+  getProductDetails() : Number {
+    return this.product.id;
+  }
+
+
 }

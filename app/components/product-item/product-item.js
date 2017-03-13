@@ -14,6 +14,9 @@ var product_service_1 = require("../../services/product-service");
 var ProductItemComponent = (function () {
     function ProductItemComponent() {
     }
+    ProductItemComponent.prototype.getProductDetails = function () {
+        return this.product.id;
+    };
     return ProductItemComponent;
 }());
 __decorate([

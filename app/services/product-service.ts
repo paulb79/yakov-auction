@@ -1,3 +1,8 @@
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import 'rxjs/add/operator/delay';
+
 export class Product {
   constructor(
     public id: number,
@@ -9,9 +14,20 @@ export class Product {
   }
 }
 
+@Injectable()
 export class ProductService {
   getProducts(): Array<Product> {
     return products.map(p => new Product(p.id, p.title, p.price, p.rating, p.description, p.categories));
+  }
+
+  getProduct(id:number) {
+    return Observable.of({
+      id: id,
+      title: "Paul Brown",
+      price: 1.99,
+      rating: 1.0,
+      description: 'idiot and twat'
+    }).delay(3000);
   }
 }
 

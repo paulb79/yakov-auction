@@ -15,6 +15,8 @@ var footer_1 = require("./components/footer/footer");
 var navbar_1 = require("./components/navbar/navbar");
 var product_item_1 = require("./components/product-item/product-item");
 var product_detail_1 = require("./components/product-detail/product-detail");
+var product_description_1 = require("./components/product-description/product-description");
+var seller_info_1 = require("./components/seller-info/seller-info");
 var search_1 = require("./components/search/search");
 var stars_1 = require("./components/stars/stars");
 var product_service_1 = require("./services/product-service");
@@ -38,6 +40,8 @@ AppModule = __decorate([
             navbar_1.NavbarComponent,
             product_item_1.ProductItemComponent,
             product_detail_1.ProductDetailComponent,
+            product_description_1.ProductDescriptionComponent,
+            seller_info_1.SellerInfoComponent,
             search_1.SearchComponent,
             stars_1.StarsComponent
         ],

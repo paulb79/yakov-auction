@@ -8,8 +8,11 @@ import { FooterComponent } from './components/footer/footer';
 import { NavbarComponent } from './components/navbar/navbar';
 import { ProductItemComponent } from './components/product-item/product-item';
 import { ProductDetailComponent } from './components/product-detail/product-detail';
+import { ProductDescriptionComponent } from './components/product-description/product-description';
+import { SellerInfoComponent } from './components/seller-info/seller-info';
 import { SearchComponent } from './components/search/search';
 import { StarsComponent } from './components/stars/stars';
+
 import { ProductService } from './services/product-service';
 
 import { AppRoutingModule } from './app.router';
@@ -27,6 +30,8 @@ import { AppRoutingModule } from './app.router';
     NavbarComponent,
     ProductItemComponent,
     ProductDetailComponent,
+    ProductDescriptionComponent,
+    SellerInfoComponent,
     SearchComponent,
     StarsComponent
   ],
