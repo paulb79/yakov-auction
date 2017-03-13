@@ -19,6 +19,7 @@ var product_description_1 = require("./components/product-description/product-de
 var seller_info_1 = require("./components/seller-info/seller-info");
 var search_1 = require("./components/search/search");
 var stars_1 = require("./components/stars/stars");
+var luxury_module_1 = require("./components/luxury/luxury.module");
 var product_service_1 = require("./services/product-service");
 var app_router_1 = require("./app.router");
 var AppModule = (function () {
@@ -30,6 +31,7 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [
             platform_browser_1.BrowserModule,
+            luxury_module_1.LuxuryModule,
             app_router_1.AppRoutingModule
         ],
         declarations: [

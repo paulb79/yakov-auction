@@ -13,6 +13,8 @@ import { SellerInfoComponent } from './components/seller-info/seller-info';
 import { SearchComponent } from './components/search/search';
 import { StarsComponent } from './components/stars/stars';
 
+import { LuxuryModule } from './components/luxury/luxury.module';
+
 import { ProductService } from './services/product-service';
 
 import { AppRoutingModule } from './app.router';
@@ -20,6 +22,7 @@ import { AppRoutingModule } from './app.router';
 @NgModule({
   imports: [
     BrowserModule,
+    LuxuryModule,
     AppRoutingModule
   ],
   declarations: [
