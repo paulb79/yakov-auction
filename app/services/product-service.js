@@ -29,13 +29,7 @@ var ProductService = (function () {
         return products.map(function (p) { return new Product(p.id, p.title, p.price, p.rating, p.description, p.categories); });
     };
     ProductService.prototype.getProduct = function (id) {
-        return Observable_1.Observable.of({
-            id: id,
-            title: "Paul Brown",
-            price: 1.99,
-            rating: 1.0,
-            description: 'idiot and twat'
-        }).delay(3000);
+        return Observable_1.Observable.of(products[id]).delay(2000);
     };
     return ProductService;
 }());

@@ -1,5 +1,6 @@
 <div class="container">
   <h1>Product Details {{ product?.title }}</h1>
   <p>{{ product?.price }} {{ product?.description }}</p>
-
+  <router-outlet></router-outlet>
+  <a [routerLink]="['./seller', 5678]">Seller Info</a>
 </div>

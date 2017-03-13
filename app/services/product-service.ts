@@ -21,13 +21,7 @@ export class ProductService {
   }
 
   getProduct(id:number) {
-    return Observable.of({
-      id: id,
-      title: "Paul Brown",
-      price: 1.99,
-      rating: 1.0,
-      description: 'idiot and twat'
-    }).delay(3000);
+    return Observable.of(products[id]).delay(2000);
   }
 }
 
